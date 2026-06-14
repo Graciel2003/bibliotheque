@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Gestion de Bibliothèque</h1>
+    <div id="listes-livres"></div>
+    <button id="btn-nouveau">Nouveau Livre</button>
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Ajouter un livre</h2>
+            <form id="form-livre">
+                <input type="text" id="titre" placeholder="Titre">
+                <input type="text" id="auteur" placeholder="Auteur">
+                <input type="number" id="annees" placeholder="Anneés de publication">
+                <input type="number" id="pages" placeholder="Nombres des pages">
+                <select id="statut">
+                    <option value="lu">Lu</option>
+                    <option value="non-lu">Non lu</option>
+                </select>
+                <button type="submit">Ajouter</button>
+                <button id="fermer">Fermer</button>
+            </form>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
